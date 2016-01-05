@@ -67,8 +67,16 @@ After successfull compilation, to run hybrid-memory-simulator , go to hybrid-mem
 * `-nographic`: when connect remote server with shell , and run qemu through shell , should add this option to disable graphic requirement.
 
 You can use all the regular QEMU command here, like start VM window in VNC give
-vnc :10 etc.  Once the system is booted, you can switch to Monitor mode using
-Ctrl-Alt-2 key and give following command to switch to simulation mode:
+vnc :10 etc. 
+
+-----------------------------
+you can use a new command window
+
+command:
+	$vinagre 127.0.0.1:5900
+-----------------------------
+
+Once the system is booted, you can switch to Monitor mode usingy Ctrl-Alt-2 key and give following command to switch to simulation mode:
 
     (qemu) simconfig -run -stopinsns 100m -stats [stats-file-name]
 
